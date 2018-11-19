@@ -15,7 +15,7 @@ case $REPLY in
     #Step 4 cloning and running JetBrains config script
     git clone https://github.com/JetBrains/clion-wsl.git
     bash clion-wsl/ubuntu_setup_env.sh
-    rm -r ./clion-wsl
+    sudo rm -r ./clion-wsl
     ;;
 ["N"]*)                                                                     #In case of negative response
     [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1                       #Exit shell
